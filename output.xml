@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180502 20:12:03.610" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<suite source="C:\Users\Maca\eclipse-workspace\Megaknihy" id="s1" name="Megaknihy">
+<suite source="C:\Users\Maca\eclipse-workspace\Megaknihy\Prihlaseni" id="s1-s1" name="Prihlaseni">
+<suite source="C:\Users\Maca\eclipse-workspace\Megaknihy\Prihlaseni\login.robot" id="s1-s1-s1" name="Login">
+<test id="s1-s1-s1-t1" name="TC 2.1 Uspesny login">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20180502 20:12:03.750" level="INFO">Opening browser 'chrome' to base url 'https://www.megaknihy.cz/'.</msg>
+<status status="PASS" endtime="20180502 20:12:20.997" starttime="20180502 20:12:03.749"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180502 20:12:22.150" starttime="20180502 20:12:20.998"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[@href='https://www.megaknihy.cz/ucet']</arg>
+</arguments>
+<msg timestamp="20180502 20:12:22.150" level="INFO">Clicking link 'xpath=//a[@href='https://www.megaknihy.cz/ucet']'.</msg>
+<status status="PASS" endtime="20180502 20:12:24.537" starttime="20180502 20:12:22.150"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20180502 20:12:24.538" level="INFO">Typing text 'testmegaknihy@seznam.cz' into text field 'id=email'.</msg>
+<status status="PASS" endtime="20180502 20:12:24.732" starttime="20180502 20:12:24.537"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=passwd</arg>
+<arg>${spravne_heslo}</arg>
+</arguments>
+<msg timestamp="20180502 20:12:24.734" level="INFO">Typing password into text field 'id=passwd'.</msg>
+<status status="PASS" endtime="20180502 20:12:24.856" starttime="20180502 20:12:24.733"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>SubmitLogin</arg>
+</arguments>
+<msg timestamp="20180502 20:12:24.857" level="INFO">Clicking button 'SubmitLogin'.</msg>
+<status status="PASS" endtime="20180502 20:12:27.578" starttime="20180502 20:12:24.857"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180502 20:12:32.579" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180502 20:12:32.580" starttime="20180502 20:12:27.579"></status>
+</kw>
+<kw name="Page Should Contain Textfield" library="Selenium2Library">
+<doc>Verifies text field ``locator`` is found from current page.</doc>
+<arguments>
+<arg>username</arg>
+</arguments>
+<msg timestamp="20180502 20:12:32.622" level="INFO">Current page contains text field 'username'.</msg>
+<status status="PASS" endtime="20180502 20:12:32.622" starttime="20180502 20:12:32.581"></status>
+</kw>
+<kw name="Page Should Contain Button" library="Selenium2Library">
+<doc>Verifies button ``locator`` is found from current page.</doc>
+<arguments>
+<arg>submitIdentity</arg>
+</arguments>
+<msg timestamp="20180502 20:12:32.646" level="INFO">Current page contains input 'submitIdentity'.</msg>
+<status status="PASS" endtime="20180502 20:12:32.646" starttime="20180502 20:12:32.623"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180502 20:12:32.990" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180502 20:12:32.990" starttime="20180502 20:12:32.646"></status>
+</kw>
+<status status="PASS" endtime="20180502 20:12:32.991" critical="yes" starttime="20180502 20:12:03.748"></status>
+</test>
+<test id="s1-s1-s1-t2" name="TC 2.2 Neuspesny login">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20180502 20:12:32.993" level="INFO">Opening browser 'chrome' to base url 'https://www.megaknihy.cz/'.</msg>
+<status status="PASS" endtime="20180502 20:12:54.393" starttime="20180502 20:12:32.992"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180502 20:12:55.543" starttime="20180502 20:12:54.394"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[@href='https://www.megaknihy.cz/ucet']</arg>
+</arguments>
+<msg timestamp="20180502 20:12:55.544" level="INFO">Clicking link 'xpath=//a[@href='https://www.megaknihy.cz/ucet']'.</msg>
+<status status="PASS" endtime="20180502 20:12:57.143" starttime="20180502 20:12:55.543"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20180502 20:12:57.146" level="INFO">Typing text 'testmegaknihy@seznam.cz' into text field 'id=email'.</msg>
+<status status="PASS" endtime="20180502 20:12:57.277" starttime="20180502 20:12:57.144"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=passwd</arg>
+<arg>${spatne_heslo}</arg>
+</arguments>
+<msg timestamp="20180502 20:12:57.278" level="INFO">Typing password into text field 'id=passwd'.</msg>
+<status status="PASS" endtime="20180502 20:12:57.355" starttime="20180502 20:12:57.277"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>SubmitLogin</arg>
+</arguments>
+<msg timestamp="20180502 20:12:57.356" level="INFO">Clicking button 'SubmitLogin'.</msg>
+<status status="PASS" endtime="20180502 20:12:59.701" starttime="20180502 20:12:57.356"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180502 20:13:04.702" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180502 20:13:04.703" starttime="20180502 20:12:59.701"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Nastala 1 chyba</arg>
+</arguments>
+<msg timestamp="20180502 20:13:04.749" level="INFO">Current page contains text 'Nastala 1 chyba'.</msg>
+<status status="PASS" endtime="20180502 20:13:04.749" starttime="20180502 20:13:04.704"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>selhalo</arg>
+</arguments>
+<msg timestamp="20180502 20:13:04.774" level="INFO">Current page contains text 'selhalo'.</msg>
+<status status="PASS" endtime="20180502 20:13:04.774" starttime="20180502 20:13:04.750"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180502 20:13:05.131" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180502 20:13:05.131" starttime="20180502 20:13:04.775"></status>
+</kw>
+<status status="PASS" endtime="20180502 20:13:05.132" critical="yes" starttime="20180502 20:12:32.992"></status>
+</test>
+<test id="s1-s1-s1-t3" name="TC 2.4 Opakovany spatny login">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20180502 20:13:05.135" level="INFO">Opening browser 'chrome' to base url 'https://www.megaknihy.cz/'.</msg>
+<status status="PASS" endtime="20180502 20:13:22.746" starttime="20180502 20:13:05.134"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180502 20:13:23.871" starttime="20180502 20:13:22.746"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[@href='https://www.megaknihy.cz/ucet']</arg>
+</arguments>
+<msg timestamp="20180502 20:13:23.872" level="INFO">Clicking link 'xpath=//a[@href='https://www.megaknihy.cz/ucet']'.</msg>
+<status status="PASS" endtime="20180502 20:13:26.131" starttime="20180502 20:13:23.872"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20180502 20:13:26.134" level="INFO">Typing text 'testmegaknihy@seznam.cz' into text field 'id=email'.</msg>
+<status status="PASS" endtime="20180502 20:13:26.274" starttime="20180502 20:13:26.132"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=passwd</arg>
+<arg>${spatne_heslo}</arg>
+</arguments>
+<msg timestamp="20180502 20:13:26.275" level="INFO">Typing password into text field 'id=passwd'.</msg>
+<status status="PASS" endtime="20180502 20:13:26.355" starttime="20180502 20:13:26.274"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>SubmitLogin</arg>
+</arguments>
+<msg timestamp="20180502 20:13:26.356" level="INFO">Clicking button 'SubmitLogin'.</msg>
+<status status="PASS" endtime="20180502 20:13:31.503" starttime="20180502 20:13:26.356"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20180502 20:13:33.504" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180502 20:13:33.504" starttime="20180502 20:13:31.503"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20180502 20:13:33.505" level="INFO">Typing text 'testmegaknihy@seznam.cz' into text field 'id=email'.</msg>
+<status status="PASS" endtime="20180502 20:13:33.640" starttime="20180502 20:13:33.505"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=passwd</arg>
+<arg>${spatne_heslo}</arg>
+</arguments>
+<msg timestamp="20180502 20:13:33.641" level="INFO">Typing password into text field 'id=passwd'.</msg>
+<status status="PASS" endtime="20180502 20:13:33.738" starttime="20180502 20:13:33.640"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>SubmitLogin</arg>
+</arguments>
+<msg timestamp="20180502 20:13:33.739" level="INFO">Clicking button 'SubmitLogin'.</msg>
+<status status="PASS" endtime="20180502 20:13:40.614" starttime="20180502 20:13:33.738"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20180502 20:13:42.615" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180502 20:13:42.615" starttime="20180502 20:13:40.614"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20180502 20:13:42.619" level="INFO">Typing text 'testmegaknihy@seznam.cz' into text field 'id=email'.</msg>
+<status status="PASS" endtime="20180502 20:13:42.747" starttime="20180502 20:13:42.617"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=passwd</arg>
+<arg>${spatne_heslo}</arg>
+</arguments>
+<msg timestamp="20180502 20:13:42.748" level="INFO">Typing password into text field 'id=passwd'.</msg>
+<status status="PASS" endtime="20180502 20:13:42.822" starttime="20180502 20:13:42.748"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>SubmitLogin</arg>
+</arguments>
+<msg timestamp="20180502 20:13:42.822" level="INFO">Clicking button 'SubmitLogin'.</msg>
+<status status="PASS" endtime="20180502 20:13:45.086" starttime="20180502 20:13:42.822"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20180502 20:13:47.087" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180502 20:13:47.088" starttime="20180502 20:13:45.086"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20180502 20:13:47.091" level="INFO">Typing text 'testmegaknihy@seznam.cz' into text field 'id=email'.</msg>
+<status status="PASS" endtime="20180502 20:13:47.225" starttime="20180502 20:13:47.089"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=passwd</arg>
+<arg>${spatne_heslo}</arg>
+</arguments>
+<msg timestamp="20180502 20:13:47.226" level="INFO">Typing password into text field 'id=passwd'.</msg>
+<status status="PASS" endtime="20180502 20:13:47.306" starttime="20180502 20:13:47.226"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>SubmitLogin</arg>
+</arguments>
+<msg timestamp="20180502 20:13:47.307" level="INFO">Clicking button 'SubmitLogin'.</msg>
+<status status="PASS" endtime="20180502 20:13:49.819" starttime="20180502 20:13:47.307"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20180502 20:13:51.821" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180502 20:13:51.821" starttime="20180502 20:13:49.820"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20180502 20:13:51.825" level="INFO">Typing text 'testmegaknihy@seznam.cz' into text field 'id=email'.</msg>
+<status status="PASS" endtime="20180502 20:13:51.950" starttime="20180502 20:13:51.821"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=passwd</arg>
+<arg>${spatne_heslo}</arg>
+</arguments>
+<msg timestamp="20180502 20:13:51.951" level="INFO">Typing password into text field 'id=passwd'.</msg>
+<status status="PASS" endtime="20180502 20:13:52.018" starttime="20180502 20:13:51.951"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>SubmitLogin</arg>
+</arguments>
+<msg timestamp="20180502 20:13:52.019" level="INFO">Clicking button 'SubmitLogin'.</msg>
+<status status="PASS" endtime="20180502 20:13:54.506" starttime="20180502 20:13:52.019"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20180502 20:13:56.508" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180502 20:13:56.508" starttime="20180502 20:13:54.507"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20180502 20:13:56.510" level="INFO">Typing text 'testmegaknihy@seznam.cz' into text field 'id=email'.</msg>
+<status status="PASS" endtime="20180502 20:13:56.683" starttime="20180502 20:13:56.509"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=passwd</arg>
+<arg>${spatne_heslo}</arg>
+</arguments>
+<msg timestamp="20180502 20:13:56.684" level="INFO">Typing password into text field 'id=passwd'.</msg>
+<status status="PASS" endtime="20180502 20:13:56.767" starttime="20180502 20:13:56.684"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>SubmitLogin</arg>
+</arguments>
+<msg timestamp="20180502 20:13:56.768" level="INFO">Clicking button 'SubmitLogin'.</msg>
+<status status="PASS" endtime="20180502 20:14:00.026" starttime="20180502 20:13:56.768"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20180502 20:14:02.027" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180502 20:14:02.028" starttime="20180502 20:14:00.027"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20180502 20:14:02.030" level="INFO">Typing text 'testmegaknihy@seznam.cz' into text field 'id=email'.</msg>
+<status status="PASS" endtime="20180502 20:14:02.175" starttime="20180502 20:14:02.029"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=passwd</arg>
+<arg>${spatne_heslo}</arg>
+</arguments>
+<msg timestamp="20180502 20:14:02.176" level="INFO">Typing password into text field 'id=passwd'.</msg>
+<status status="PASS" endtime="20180502 20:14:02.244" starttime="20180502 20:14:02.175"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>SubmitLogin</arg>
+</arguments>
+<msg timestamp="20180502 20:14:02.244" level="INFO">Clicking button 'SubmitLogin'.</msg>
+<status status="PASS" endtime="20180502 20:14:04.730" starttime="20180502 20:14:02.244"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20180502 20:14:06.731" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180502 20:14:06.731" starttime="20180502 20:14:04.730"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20180502 20:14:06.733" level="INFO">Typing text 'testmegaknihy@seznam.cz' into text field 'id=email'.</msg>
+<status status="PASS" endtime="20180502 20:14:06.857" starttime="20180502 20:14:06.732"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=passwd</arg>
+<arg>${spatne_heslo}</arg>
+</arguments>
+<msg timestamp="20180502 20:14:06.858" level="INFO">Typing password into text field 'id=passwd'.</msg>
+<status status="PASS" endtime="20180502 20:14:06.929" starttime="20180502 20:14:06.857"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>SubmitLogin</arg>
+</arguments>
+<msg timestamp="20180502 20:14:06.930" level="INFO">Clicking button 'SubmitLogin'.</msg>
+<status status="PASS" endtime="20180502 20:14:09.572" starttime="20180502 20:14:06.930"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20180502 20:14:11.573" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180502 20:14:11.573" starttime="20180502 20:14:09.572"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20180502 20:14:11.575" level="INFO">Typing text 'testmegaknihy@seznam.cz' into text field 'id=email'.</msg>
+<status status="PASS" endtime="20180502 20:14:11.670" starttime="20180502 20:14:11.574"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=passwd</arg>
+<arg>${spatne_heslo}</arg>
+</arguments>
+<msg timestamp="20180502 20:14:11.671" level="INFO">Typing password into text field 'id=passwd'.</msg>
+<status status="PASS" endtime="20180502 20:14:11.743" starttime="20180502 20:14:11.671"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>SubmitLogin</arg>
+</arguments>
+<msg timestamp="20180502 20:14:11.743" level="INFO">Clicking button 'SubmitLogin'.</msg>
+<status status="PASS" endtime="20180502 20:14:13.919" starttime="20180502 20:14:11.743"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20180502 20:14:15.921" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180502 20:14:15.922" starttime="20180502 20:14:13.920"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20180502 20:14:15.925" level="INFO">Typing text 'testmegaknihy@seznam.cz' into text field 'id=email'.</msg>
+<status status="PASS" endtime="20180502 20:14:16.069" starttime="20180502 20:14:15.923"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=passwd</arg>
+<arg>${spatne_heslo}</arg>
+</arguments>
+<msg timestamp="20180502 20:14:16.070" level="INFO">Typing password into text field 'id=passwd'.</msg>
+<status status="PASS" endtime="20180502 20:14:16.131" starttime="20180502 20:14:16.069"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>SubmitLogin</arg>
+</arguments>
+<msg timestamp="20180502 20:14:16.132" level="INFO">Clicking button 'SubmitLogin'.</msg>
+<status status="PASS" endtime="20180502 20:14:18.596" starttime="20180502 20:14:16.131"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20180502 20:14:20.597" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180502 20:14:20.597" starttime="20180502 20:14:18.596"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Nastala 1 chyba</arg>
+</arguments>
+<msg timestamp="20180502 20:14:20.625" level="INFO">Current page contains text 'Nastala 1 chyba'.</msg>
+<status status="PASS" endtime="20180502 20:14:20.625" starttime="20180502 20:14:20.598"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>selhalo</arg>
+</arguments>
+<msg timestamp="20180502 20:14:20.648" level="INFO">Current page contains text 'selhalo'.</msg>
+<status status="PASS" endtime="20180502 20:14:20.648" starttime="20180502 20:14:20.626"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180502 20:14:21.001" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180502 20:14:21.002" starttime="20180502 20:14:20.649"></status>
+</kw>
+<status status="PASS" endtime="20180502 20:14:21.002" critical="yes" starttime="20180502 20:13:05.133"></status>
+</test>
+<status status="PASS" endtime="20180502 20:14:21.003" starttime="20180502 20:12:03.651"></status>
+</suite>
+<status status="PASS" endtime="20180502 20:14:21.007" starttime="20180502 20:12:03.649"></status>
+</suite>
+<status status="PASS" endtime="20180502 20:14:21.009" starttime="20180502 20:12:03.632"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="3">Critical Tests</stat>
+<stat fail="0" pass="3">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Megaknihy" pass="3">Megaknihy</stat>
+<stat fail="0" id="s1-s1" name="Prihlaseni" pass="3">Megaknihy.Prihlaseni</stat>
+<stat fail="0" id="s1-s1-s1" name="Login" pass="3">Megaknihy.Prihlaseni.Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
